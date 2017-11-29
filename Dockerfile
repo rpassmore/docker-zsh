@@ -6,13 +6,10 @@ WORKDIR /root
 #Install ZGen
 RUN git clone https://github.com/tarjoilija/zgen.git ~/.zgen
 
-#Copy config files
-COPY ./src/.zshrc .zshrc 
-COPY ./src/.zgen .zgen
-#COPY ./src/.zcompdump .zcompdump
+#Copy config files and make dotfiles
+COPY ./src/zshrc .zshrc 
+COPY ./src/zgen .zgen
 
-#RUN "${HOME}/.zgen/zgen.zsh"
-#RUN ["/bin/zsh", "-c", "zgen", "reset"]
 CMD ["zsh"]
 
 #docker build -t rpassmore/docker-oh-my-zsh ./
