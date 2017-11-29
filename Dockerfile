@@ -12,6 +12,6 @@ COPY ./src/zgen .zgen
 
 CMD ["zsh"]
 
-#docker build -t rpassmore/docker-oh-my-zsh ./
-#docker run -ti -v ~/Documents/Development:/home/node/Development rpassmore/docker-oh-my-zsh /bin/zsh
+#docker build -t rpassmore/docker-zsh ./
+#docker run -ti -v ~/Documents/Development:/home/node/Development rpassmore/docker-zsh /bin/zsh
 
